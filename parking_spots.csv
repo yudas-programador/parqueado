@@ -1,0 +1,57 @@
+id,name,price,lat,lon,publicParking,publicParkingPrice,category,Mon,Tue,Wed,Thu,Fri,Sat,Sun
+agora-mall,Agora Mall,$85/hr,18.478,-69.9387,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+sambil,Sambil Santo Domingo,$80/hr,18.483,-69.913,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+blue-mall,Blue Mall,$90/hr,18.4708,-69.9388,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+downtown-center,Downtown Center,$80/hr,18.4673,-69.9383,none,,cercanas,10am-10pm,10am-10pm,10am-10pm,10am-10pm,10am-10pm,10am-10pm,11am-9pm
+galeria-360,Galería 360,$75/hr,18.484,-69.938,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+acropolis-center,Acrópolis Center,$85/hr,18.471,-69.936,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+bella-vista-mall,Bella Vista Mall,$70/hr,18.458,-69.937,none,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+plaza-central,Plaza Central,$60/hr,18.476,-69.928,none,,cercanas,9am-9pm,9am-9pm,9am-9pm,9am-9pm,9am-9pm,9am-9pm,10am-7pm
+plaza-lama-27,"Plaza Lama, 27 de Febrero",Gratis (clientes),18.471,-69.924,free,,cercanas,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,9am-8pm
+megacentro,Megacentro,Gratis,18.508,-69.829,free,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+coral-mall,Coral Mall,Gratis,18.513,-69.846,free,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,11am-8pm
+bravo-churchill,"Supermercado Bravo, Churchill",Gratis (clientes),18.465,-69.937,free,,cercanas,7am-11pm,7am-11pm,7am-11pm,7am-11pm,7am-11pm,7am-11pm,8am-10pm
+nacional-vega,"Supermercado Nacional, Lope de Vega",Gratis (clientes),18.474,-69.932,free,,cercanas,7am-12am,7am-12am,7am-12am,7am-12am,7am-12am,7am-12am,8am-10pm
+jumbo-luperon,"Jumbo, Luperón",Gratis (clientes),18.489,-69.949,free,,cercanas,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,9am-8pm
+jumbo-kennedy,"Jumbo, John F. Kennedy",Gratis (clientes),18.484,-69.939,free,,cercanas,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,9am-8pm
+sirena-churchill,"La Sirena, Churchill",Gratis (clientes),18.472,-69.938,free,,cercanas,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,9am-8pm
+sirena-venezuela,"La Sirena, Av. Venezuela",Gratis (clientes),18.495,-69.865,free,,cercanas,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,8am-10pm,9am-8pm
+ole-independencia,"Supermercado Olé, Independencia",Gratis (clientes),18.455,-69.923,free,,cercanas,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-10pm,8am-9pm
+ikea,IKEA Santo Domingo,Gratis (clientes),18.469,-69.945,free,,cercanas,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-9pm,10am-8pm
+americana,Ferretería Americana,Gratis (clientes),18.481,-69.925,free,,cercanas,8am-7pm,8am-7pm,8am-7pm,8am-7pm,8am-7pm,8am-7pm,9am-1pm
+banco-popular-jfk,Torre Popular (Banco Popular),Gratis (clientes),18.477,-69.923,free,,cercanas,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,9am-1pm,Cerrado
+banco-popular-vega,"Banco Popular, Lope de Vega",Gratis (clientes),18.475,-69.932,free,,cercanas,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,9am-1pm,Cerrado
+banco-bhd-27,Banco BHD (27 de Febrero),Gratis (clientes),18.469,-69.938,free,,cercanas,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,9am-1pm,Cerrado
+banreservas-churchill,Banreservas (Churchill),Gratis (clientes),18.468,-69.937,free,,cercanas,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,9am-1pm,Cerrado
+scotiabank-churchill,Scotiabank (Churchill),Gratis (clientes),18.473,-69.937,free,,cercanas,8am-4pm,8am-4pm,8am-4pm,8am-4pm,8am-4pm,9am-1pm,Cerrado
+smartfit-naco,Smart Fit Naco,Gratis (miembros),18.475,-69.929,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-churchill,Smart Fit Churchill,Gratis (miembros),18.469,-69.939,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-sarasota,Smart Fit Sarasota,Gratis (miembros),18.456,-69.941,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-bv,Smart Fit Bella Vista,Gratis (miembros),18.458,-69.938,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-mirabal,Smart Fit Hermanas Mirabal,Gratis (miembros),18.519,-69.915,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-san-isidro,Smart Fit San Isidro,Gratis (miembros),18.497,-69.801,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+smartfit-charles,Smart Fit Charles de Gaulle,Gratis (miembros),18.525,-69.855,free,,cercanas,5am-11pm,5am-11pm,5am-11pm,5am-11pm,5am-11pm,8am-6pm,9am-3pm
+body-shop-naco,Body Shop Naco,Gratis (miembros),18.477,-69.931,free,,cercanas,5am-10pm,5am-10pm,5am-10pm,5am-10pm,5am-10pm,7am-7pm,9am-2pm
+gold-gym-morales,Gold's Gym Evaristo Morales,Gratis (miembros),18.466,-69.932,free,,cercanas,5am-10pm,5am-10pm,5am-10pm,5am-10pm,5am-10pm,8am-6pm,9am-2pm
+parqueo-uasd,Parqueo UASD,$40/hr,18.4686,-69.9119,paid,$20/hr,cercanas,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-8pm,8am-4pm,Cerrado
+parqueo-intec,Parqueo INTEC,$55/hr,18.4854,-69.9406,paid,$25/hr,cercanas,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-8pm,Cerrado,Cerrado
+unphu,Universidad Nacional Pedro Henríquez Ureña (UNPHU),Pagado,18.478,-69.948,paid,$50/hr,cercanas,7am-10pm,7am-10pm,7am-10pm,7am-10pm,7am-8pm,8am-4pm,Cerrado
+caribbean-downtown,Caribbean Cinemas Downtown Center,Pagado,18.467,-69.938,paid,$80/hr,cercanas,3pm-11pm,3pm-11pm,3pm-11pm,3pm-11pm,2pm-12am,2pm-12am,2pm-11pm
+palacio-cine-agora,Palacio del Cine Agora Mall,Pagado,18.478,-69.939,paid,$85/hr,cercanas,3pm-11pm,3pm-11pm,3pm-11pm,3pm-11pm,2pm-12am,2pm-12am,2pm-11pm
+cedimat,CEDIMAT,Pagado,18.481,-69.92,paid,$75/hr,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+plaza-salud,Hospital General de la Plaza de la Salud,Pagado,18.479,-69.923,paid,$70/hr,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+clinica-abreu,Clínica Abreu,Pagado,18.479,-69.904,paid,$80/hr,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+centro-medico-uce,Centro Médico UCE,Pagado,18.476,-69.907,paid,$70/hr,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+clinica-gomez-patino,Clínica Gómez Patiño,Pagado,18.473,-69.902,paid,$75/hr,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+jardin-botanico,Jardín Botánico Nacional,Gratis,18.491,-69.942,free,,cercanas,Cerrado,9am-5pm,9am-5pm,9am-5pm,9am-5pm,9am-5pm,9am-5pm
+parque-mirador,Parque Mirador Sur,Gratis,18.448,-69.94,free,,cercanas,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+palacio-nacional,Palacio Nacional,Restringido,18.474,-69.898,none,,cercanas,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,Cerrado,Cerrado
+dgii,DGII Sede Central,Gratis (clientes),18.478,-69.912,free,,cercanas,8am-5pm,8am-5pm,8am-5pm,8am-5pm,8am-5pm,Cerrado,Cerrado
+pasaportes,Dirección General de Pasaportes,Pagado,18.452,-69.939,paid,$100,cercanas,8am-3pm,8am-3pm,8am-3pm,8am-3pm,8am-3pm,Cerrado,Cerrado
+zona-colonial,Zona Colonial,$100/hr,18.476,-69.883,free,,populares,24 Horas,24 Horas,24 Horas,24 Horas,24 Horas,24 Horas,24 Horas
+malecon,Malecón de Santo Domingo,Gratis,18.466,-69.9,free,,populares,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+tres-ojos,Parque Nacional Los Tres Ojos,Gratis,18.475,-69.847,free,,populares,9am-5pm,9am-5pm,9am-5pm,9am-5pm,9am-5pm,9am-5pm,9am-5pm
+adrian-tropical,Adrian Tropical Malecón,Gratis (clientes),18.464,-69.918,free,,populares,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+meson-cava,Restaurante El Mesón de la Cava,Gratis (clientes),18.451,-69.938,free,,populares,12pm-12am,12pm-12am,12pm-12am,12pm-12am,12pm-12am,12pm-12am,12pm-11pm
+playa-boca-chica,Playa Boca Chica,Gratis,18.451,-69.609,free,,populares,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto
+playa-guayacanes,Playa Guayacanes,Gratis,18.423,-69.462,free,,populares,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto,Abierto

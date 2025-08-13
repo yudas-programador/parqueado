@@ -1,0 +1,14 @@
+que la app en la pantalla de "buscar", tenga un menu flotante con
+
+1- top 5 lugares de RD
+2- Ubicaciones cercanas a ti
+2- lo mas buscado en la app otra es que guarde lo que mas se busque en la app para que en esta ventana se lo muestre a los usuarios
+
+todo esto en la pantalla de "buscar"
+
+que las ubicaciones cercanas la determine con lugares cercanos
+
+que en el perfil permita al usuario cambiar si para su mapa y ubicacion para ir use waze o google maps, esto quedara como preferia de cada usuario y se pueda cambiar cuando se quiera.
+
+
+investigar tambien en los lugares en la BD si es privado y se paga y privado y no se paga, si es privado y no se paga ponlo de color verde, si es privado y se paga agrega el monto y si no sabes ponlo "monto no predefinido"

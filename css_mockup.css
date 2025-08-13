@@ -1,0 +1,606 @@
+/* Copyright: mario de jesus guzman cabral cedula 402-3032959-7 hizo esto. */
+/* css_mockup.css: Proporciona todos los estilos visuales, el diseño y las animaciones para la aplicación. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f8fafc; /* slate-50 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #1f2937; /* gray-800 */
+}
+
+.app-frame {
+  width: 430px;
+  height: 932px;
+  border: 6px solid #1f2937; /* gray-800 */
+  border-radius: 2rem;
+  overflow: hidden;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  position: relative; /* For modal positioning */
+}
+
+.screen {
+  flex: 1;
+  display: none;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto; /* Allow scrolling on long screens */
+}
+
+.screen.active {
+  display: flex;
+}
+
+/* Navigation Bar */
+.nav {
+  height: 60px;
+  display: flex;
+  border-top: 1px solid #e5e7eb; /* gray-200 */
+  background: white;
+  flex-shrink: 0; /* Prevent nav from shrinking */
+}
+
+.nav button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  font-size: 0.875rem;
+  color: #6b7280; /* gray-500 */
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav button:hover {
+    color: #4f46e5; /* indigo-600 */
+}
+
+.nav button.active {
+  color: #4f46e5; /* indigo-600 */
+  font-weight: 600;
+}
+
+/* Reusable Components */
+.card {
+  border: 1px solid #e5e7eb; /* gray-200 */
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: white;
+  position: relative; /* For positioning the details button */
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s, color 0.2s;
+  display: inline-block; /* Fix alignment */
+  text-align: center;
+}
+
+.btn-main {
+  background: #4f46e5; /* indigo-600 */
+  color: white;
+  border-color: #4f46e5;
+}
+.btn-main:hover {
+    background: #4338ca; /* indigo-700 */
+}
+
+.btn-danger {
+    background-color: #ef4444; /* red-500 */
+    color: white;
+    border-color: #ef4444;
+}
+.btn-danger:hover {
+    background-color: #dc2626; /* red-600 */
+}
+
+.btn-fav-active {
+    background-color: #f59e0b; /* amber-500 */
+    color: white;
+}
+
+.btn-heart-active {
+    background-color: #ef4444; /* red-500 */
+    color: white;
+}
+
+/* Generic Form Group Styles */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+}
+.form-group input:read-only {
+    background-color: #e5e7eb; /* gray-200 */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+body.dark .form-group input:read-only {
+    background-color: #4b5563; /* gray-600 */
+}
+
+#login .btn,
+#register .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+}
+
+
+/* Specific Screen Styles */
+#splash .gif-container img {
+  border-radius: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+#search .section-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4b5563; /* gray-600 */
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#searchInput {
+    margin-bottom: 0; /* remove margin from input itself */
+}
+
+#locateMeBtn {
+    flex-shrink: 0;
+    padding: 0.75rem; /* make it squarer */
+    line-height: 1;
+}
+
+/* New: Search Filters */
+.search-filters {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e5e7eb; /* gray-200 */
+}
+
+.filter-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: #6b7280; /* gray-500 */
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+.filter-btn:hover {
+    color: #4f46e5; /* indigo-600 */
+}
+.filter-btn.active {
+    color: #4f46e5; /* indigo-600 */
+    border-bottom-color: #4f46e5; /* indigo-600 */
+}
+
+.filter-content { display: none; }
+.filter-content.active { display: block; }
+
+/* Details Button (3 dots) */
+.details-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: #9ca3af; /* gray-400 */
+    cursor: pointer;
+    padding: 0.25rem;
+    z-index: 10;
+}
+.details-btn:hover {
+    color: #4b5563; /* gray-600 */
+}
+
+/* Details Modal */
+.details-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100;
+}
+
+.details-modal-content {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 380px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.details-modal-content h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.details-modal-content .details-section {
+    margin-bottom: 1rem;
+}
+
+.details-modal-content .details-section h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #4f46e5; /* indigo-600 */
+}
+
+.details-modal-content ul { list-style: none; padding: 0; margin: 0; font-size: 0.875rem; }
+.details-modal-content ul li { display: flex; justify-content: space-between; padding: 0.25rem 0; border-bottom: 1px solid #f3f4f6; }
+.details-modal-content ul li:last-child { border-bottom: none; }
+.details-modal-content ul li .day { font-weight: 600; }
+
+/* Comment Rating Input Styles */
+.comment-rating-input {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #d1d5db; /* gray-300 */
+    cursor: pointer;
+}
+.comment-rating-input span.hover,
+.comment-rating-input span.selected {
+    color: #f59e0b; /* amber-500 */
+}
+
+/* Comment Item Styles */
+.details-modal-content .comment-item {
+    position: relative; /* Needed for positioning the delete button */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: #f9fafb; /* gray-50 */
+    border: 1px solid #f3f4f6; /* gray-100 */
+}
+
+.details-modal-content .comment-item .rating {
+    color: #f59e0b; /* amber-500 */
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+}
+.details-modal-content .comment-item .rating .empty-star {
+    color: #e5e7eb; /* gray-200 */
+}
+
+.details-modal-content .comment-item p {
+    margin: 0 0 0.25rem 0;
+}
+
+.details-modal-content .comment-item small {
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+/* New: Comment Delete Button */
+.comment-delete-btn {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background: transparent;
+    border: none;
+    color: #ef4444; /* red-500 */
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.2rem;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    z-index: 5;
+}
+.comment-delete-btn:hover { opacity: 1; }
+
+/* Parking Status Indicator */
+.parking-status {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.5rem;
+    display: inline-block;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.status-free { background-color: #dcfce7; color: #15803d; }
+.status-paid { background-color: #fefce8; color: #a16207; }
+.status-none { background-color: #fee2e2; color: #b91c1c; }
+
+body.dark .status-free { background-color: #14532d; color: #bbf7d0; }
+body.dark .status-paid { background-color: #713f12; color: #fef08a; }
+body.dark .status-none { background-color: #7f1d1d; color: #fecaca; }
+
+/* Floating Dark Mode Toggle */
+.floating-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1100; /* Above screen content */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e5e7eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.floating-btn {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  z-index: 1100; /* Above screen content, below modals */
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e5e7eb;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: #d1d5db; /* gray-300 */
+    color: #6b7280; /* gray-500 */
+    cursor: not-allowed;
+    border-color: #d1d5db;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --- Responsive Design for Mobile Devices --- */
+/* This media query targets screens with a max-width of 450px (most phones). */
+@media (max-width: 450px) {
+  body {
+    /* On small screens, remove the centering to let the frame fill the space */
+    display: block;
+    background: white; /* Ensure background is white if frame is transparent */
+  }
+
+  .app-frame {
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+/* --- Toast Notifications --- */
+#toast-container {
+    position: absolute;
+    bottom: 80px; /* Position above the nav bar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.toast {
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: toast-in 0.5s forwards;
+}
+
+.toast.success {
+    background-color: #22c55e; /* green-500 */
+}
+
+.toast.error {
+    background-color: #ef4444; /* red-500 */
+}
+
+@keyframes toast-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes toast-out {
+    to {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* --- Safe Area Adjustments for Modern Phones --- */
+@media (max-width: 450px) {
+  .screen {
+    /* Adds padding to the top of the screen content to avoid the notch */
+    padding-top: calc(1.5rem + env(safe-area-inset-top));
+  }
+
+  .nav {
+    /* Makes the nav bar taller to account for the home indicator area */
+    height: calc(60px + env(safe-area-inset-bottom));
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  #toast-container {
+    /* Pushes the notifications up to be visible above the home indicator area */
+    bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+
+/* --- Dark Mode Theme --- */
+body.dark {
+  background: #111827; /* gray-900 */
+}
+
+body.dark .app-frame {
+  background: #1f2937; /* gray-800 */
+  border-color: #4b5563; /* gray-600 */
+}
+
+body.dark .screen {
+  color: #d1d5db; /* gray-300 */
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark strong {
+  color: #f9fafb; /* gray-50 */
+}
+
+body.dark .card {
+  background: #374151; /* gray-700 */
+  border-color: #4b5563; /* gray-600 */
+}
+
+body.dark input,
+body.dark select {
+  background-color: #4b5563; /* gray-600 */
+  color: #f9fafb;
+  border-color: #6b7280; /* gray-500 */
+}
+
+body.dark input::placeholder {
+  color: #9ca3af; /* gray-400 */
+}
+
+body.dark .nav {
+  background: #374151;
+  border-top-color: #4b5563;
+}
+
+body.dark .nav button {
+  color: #9ca3af;
+}
+
+body.dark .nav button.active {
+  color: #818cf8; /* indigo-400 */
+}
+
+body.dark #login .form-group input,
+body.dark #register .form-group input {
+    background-color: #4b5563;
+    color: #f9fafb;
+    border-color: #6b7280;
+}
+
+body.dark .details-btn {
+    color: #6b7280; /* gray-500 */
+}
+body.dark .details-btn:hover {
+    color: #d1d5db; /* gray-300 */
+}
+body.dark .details-modal-content {
+    background: #374151; /* gray-700 */
+}
+body.dark .details-modal-content .details-section h4 {
+    color: #a5b4fc; /* indigo-300 */
+}
+body.dark .details-modal-content ul li {
+    border-bottom-color: #4b5563; /* gray-600 */
+}
+
+body.dark .comment-rating-input {
+    color: #6b7280; /* gray-500 */
+}
+body.dark .comment-rating-input span.hover,
+body.dark .comment-rating-input span.selected {
+    color: #fcd34d; /* amber-300 */
+}
+
+body.dark .details-modal-content .comment-item {
+    background: #4b5563; /* gray-600 */
+    border-color: #6b7280; /* gray-500 */
+}
+
+body.dark .details-modal-content .comment-item .rating {
+    color: #fcd34d; /* amber-300 */
+}
+
+body.dark .details-modal-content .comment-item .rating .empty-star {
+    color: #4b5563; /* gray-600 */
+}
+
+body.dark .comment-delete-btn {
+    color: #fca5a5; /* red-300 */
+}
+
+body.dark .search-filters {
+    border-bottom-color: #4b5563; /* gray-600 */
+}
+body.dark .filter-btn {
+    color: #9ca3af; /* gray-400 */
+}
+body.dark .filter-btn.active {
+    color: #a5b4fc; /* indigo-300 */
+    border-bottom-color: #a5b4fc; /* indigo-300 */
+}
+
+body.dark .floating-btn {
+  background-color: rgba(55, 65, 81, 0.8); /* gray-700 */
+  border-color: #6b7280;
+}
